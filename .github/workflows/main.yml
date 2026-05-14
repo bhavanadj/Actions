@@ -7,4 +7,6 @@ jobs :
       - run : echo "${{github.event.name}} event automatically triggered this job"
       - run : echo "${{runner.os.}} server has this hosted by GitHub"
       - run : echo "${{github.repository}} is updated. Branch name is {{github.ref}}"
-      - run : echo "${{}}"
+      - uses : actions/checkout@v3
+      - run : echo "The runner has cloned the ${{github.repository}} repository"
+      - 
