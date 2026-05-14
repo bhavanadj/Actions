@@ -13,5 +13,3 @@ jobs :
       - run : echo "The runner has closed the ${{github.repository}} repository"
       - run : ls -l ${{github.workspace}}
       - run : echo "Push status = ${{job.status}}"
-      
-      
