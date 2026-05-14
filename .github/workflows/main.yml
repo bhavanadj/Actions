@@ -5,7 +5,7 @@ jobs :
     runs-on: ubuntu-latest
     steps:
       - run : echo "${{github.event.name}} event automatically triggered this job"
-      - run : echo "${{runner.os.}} server has this hosted by GitHub"
+      - run : echo "${{runner.os}} server has this hosted by GitHub"
       - run : echo "${{github.repository}} is updated. Branch name is {{github.ref}}"
       - uses : actions/checkout@v3
       - run : echo "The runner has cloned the ${{github.repository}} repository"
